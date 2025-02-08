@@ -2,42 +2,49 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-5">
+    <section id="contact" className="py-5 bg-light">
       <div className="container">
-        <h2 className="text-center fw-bold mb-4">Contact Me</h2>
-        <form>
-          <div className="row">
-            <div className="col-md-6 mb-3">
-              <input
+        <div className="row">
+          <div className="container  col-md-6 text-center">
+            <h3>Contact Us</h3>
+            <p>Connect with us to create</p>
+          </div>
+          {/* form */}
+          <div className="container col-md-6">
+            <form action="">
+              <div className="row">
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="shadow border-0 rounded p-3 m-2 form-control rounded-pill"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="shadow border-0 rounded p-3 m-2 form-control  rounded-pill"
+                    placeholder="Enter Your Email"
+                  />
+                </div>
+              </div>
+              <textarea
                 type="text"
-                className="form-control"
-                placeholder="Your Name"
-                required
+                rows={3}
+                className="shadow border-0 rounded p-3 m-2 form-control rounded-pill"
+                placeholder="Enter Your Message"
               />
-            </div>
-            <div className="col-md-6 mb-3">
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Your Email"
-                required
-              />
-            </div>
+              <div className="p-2 m-2">
+                <button
+                  type="button"
+                  className="btn btn-dark shadow rounded-pill"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
           </div>
-          <div className="mb-3">
-            <textarea
-              className="form-control"
-              placeholder="Your Message"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-          <div className="text-center">
-            <button type="submit" className="btn btn-primary btn-lg">
-              Send Message
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
   );
