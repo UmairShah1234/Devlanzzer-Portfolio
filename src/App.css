@@ -33,3 +33,7 @@
 .underline-on-hover:hover::after {
   transform: scaleX(1);
 }
+
+.top-fixed {
+  z-index: 1030; /* Ensures navbar stays above content */
+}

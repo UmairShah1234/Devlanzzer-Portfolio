@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="hero-section d-flex align-items-center bg-light text-center border"
+      className="hero-section d-flex align-items-center bg-light text-center"
     >
       <div className="container">
         <h1 className="display-5 fw-bold">Hire. Collaborate. Succeed</h1>
